@@ -1,10 +1,10 @@
-import { Container, Flex, Box } from "@/styles/Global";
-import { Text } from "@/styles/Text";
-import { Footer as FooterWrapper } from "./style";
 import { UserImage } from "@/pages/home/style";
-import { userData } from "@/utils/userData";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { Button } from "@/styles/Buttons";
+import { Box, Container, Flex } from "@/styles/Global";
+import { Text } from "@/styles/Text";
+import { userData } from "@/utils/userData";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Footer as FooterWrapper } from "./style";
 // import { HandEffect } from "../HandEffect";
 
 export const Footer = (): JSX.Element => {
@@ -21,10 +21,10 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you! {/* <HandEffect /> */}
+              Obrigado! {/* <HandEffect /> */}
             </Text>
             <Text type="body1" color="grey2">
-              Follow me on my social networks and let's talk
+              Por acessar meu Portfólio
             </Text>
           </Box>
         </Flex>

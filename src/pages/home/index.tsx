@@ -1,12 +1,12 @@
 // Styles
+import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
-import { Button } from "@/styles/Buttons";
 
 // Components
-import { Stack } from "@/components/Stack";
-import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
+import { Project } from "@/components/Project";
+import { Stack } from "@/components/Stack";
 
 // Data
 import { stackData } from "@/utils/stackData";
@@ -17,14 +17,14 @@ import { FaGithub } from "react-icons/fa";
 // Page Style
 import {
   Header,
-  HeaderContent,
   HeaderButtonsArea,
-  UserImage,
-  StackCards,
-  ProjectsArea,
-  ProjectsAreaSocialMediaMessage,
+  HeaderContent,
   ProjectAreaWrapperColumns,
+  ProjectsArea,
   ProjectsAreaContent,
+  ProjectsAreaSocialMediaMessage,
+  StackCards,
+  UserImage,
 } from "./style";
 
 export const Home = (): JSX.Element => {
@@ -44,29 +44,29 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Olá, meu nome é {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              Sou{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                Desenvolvedor
               </Text>{" "}
-              creating and{" "}
+              Web{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                Full
               </Text>{" "}
-              projects
+              Stack
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Conheça aqui neste ambiente, criado especialmente para você, meus
+              projetos e tecnologias
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Ver Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Ver código-fonte do portfólio
               </Button>
               <Button
                 color="grey5"
@@ -92,12 +92,12 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                Meus Projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
+                Alguns dos{" "}
                 <Text as="span" color="brand5">
-                  side projects
+                  meus projetos paralelos
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
